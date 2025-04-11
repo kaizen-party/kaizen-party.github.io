@@ -1239,6 +1239,19 @@
   font-family: "Ghibli";
   font-weight: 700;
   line-height: 1.55;
+  padding-right: var(--dl-layout-space-tripleunit);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.home-link15 {
+  color: #242424;
+  display: block;
+  font-size: 18px;
+  align-self: flex-start;
+  font-style: normal;
+  font-family: "Ghibli";
+  font-weight: 700;
+  line-height: 1.55;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -1345,10 +1358,35 @@
   padding-bottom: var(--dl-layout-space-tenunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  background-image: url("https://images5.alphacoders.com/134/1345122.jpeg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(0, 0, 0,0.7); /* dark overlay */
+  background-blend-mode: darken;
+  position: relative;
+  overflow: hidden; /* Make sure the pseudo-element doesn't overflow */
+  z-index: 1;
 }
+
+.home-about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px); /* You can adjust the blur level */
+  z-index: 0;
+}
+
+.home-about > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
  
 .home-content-container1 {
   width: 100%;
@@ -1373,7 +1411,8 @@
 }
  
 .home-heading1 {
-  color: #242424;
+  /* color: #242424; */
+  color: #f1f1f1;
   width: 802px;
   text-align: center;
   margin-left: var(--dl-layout-space-doubleunit);
@@ -1388,7 +1427,8 @@
 }
  
 .home-text10 {
-  color: #434343;
+  /* color: #434343; */
+  color: #f1f1f1;
   font-size: 18px;
   text-align: center;
   font-family: "Fira Mono";
@@ -1556,7 +1596,7 @@
   color: #242424;
 }
  
-.home-process {
+.home-goals {
   width: 100%;
   display: flex;
   max-width: var(--dl-layout-size-maxcontent);
@@ -2768,7 +2808,7 @@
   padding-top: var(--dl-layout-space-fiveunits);
   margin-right: var(--dl-layout-space-fiveunits);
   padding-left: var(--dl-layout-space-tenunits);
-  border-radius: var(--dl-layout-radius-radius8);
+  border-radius: var(--dl-layout-radius-radius24);
   padding-right: var(--dl-layout-space-tenunits);
   flex-direction: column;
   padding-bottom: var(--dl-layout-space-fiveunits);
@@ -2779,7 +2819,7 @@
   color: #242424;
   font-size: 36px;
   font-style: normal;
-  font-family: "Montserrat";
+  font-family: "Ghibli";
   font-weight: 700;
   line-height: 1.55;
   margin-bottom: var(--dl-layout-space-fourunits);
@@ -2790,6 +2830,7 @@
 .home-name {
   width: 100%;
   border: none;
+  font-family: "Fira Mono";
   padding-top: var(--dl-layout-space-doubleunit);
   padding-left: var(--dl-layout-space-tripleunit);
   border-radius: var(--dl-layout-radius-radius8);
@@ -2801,6 +2842,7 @@
 .home-email1 {
   width: 100%;
   border: none;
+  font-family: "Fira Mono";
   padding-top: var(--dl-layout-space-doubleunit);
   padding-left: var(--dl-layout-space-tripleunit);
   border-radius: var(--dl-layout-radius-radius8);
@@ -2813,6 +2855,7 @@
   width: 100%;
   border: none;
   height: 140px;
+  font-family: "Fira mono";
   padding-top: var(--dl-layout-space-doubleunit);
   padding-left: var(--dl-layout-space-tripleunit);
   border-radius: var(--dl-layout-radius-radius8);
@@ -2831,6 +2874,7 @@
   padding-bottom: var(--dl-layout-space-unit);
   background-color: var(--dl-color-gray-black);
 }
+
  
 .home-locations-container {
   display: flex;
@@ -2849,7 +2893,7 @@
 .home-heading8 {
   font-size: 24px;
   font-style: normal;
-  font-family: "Roboto";
+  font-family: "Ghibli";
   font-weight: 700;
   margin-bottom: var(--dl-layout-space-doubleunit);
 }
@@ -3105,7 +3149,7 @@
     height: auto;
     align-self: stretch;
   }
-  .home-process {
+  .home-goals {
     padding-top: var(--dl-layout-space-fiveunits);
     padding-bottom: var(--dl-layout-space-fiveunits);
   }
@@ -3122,6 +3166,9 @@
     width: 100%;
   }
   .home-proposals {
+    padding-top: var(--dl-layout-space-fiveunits);
+  }
+  .home-get-in-touch {
     padding-top: var(--dl-layout-space-fiveunits);
   }
   .home-text58 {
