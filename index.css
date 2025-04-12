@@ -873,6 +873,7 @@
 .home-text50 {
   color: var(--dl-color-gray-black);
   display: inline-block;
+
 }
  
 .home-fragment15 {
@@ -1347,7 +1348,7 @@
 .home-link18 {
   text-decoration: none;
 }
- 
+
 .home-about {
   width: 100%;
   display: flex;
@@ -1358,11 +1359,12 @@
   padding-bottom: var(--dl-layout-space-tenunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("https://images5.alphacoders.com/134/1345122.jpeg");
+  /* background-image: url("https://images5.alphacoders.com/134/1345122.jpeg"); */
+  background-image: url("https://img.freepik.com/free-photo/japan-fantasy-landscape_23-2151870146.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(0, 0, 0,0.7); /* dark overlay */
-  background-blend-mode: darken;
+  background-color: rgb(0, 0, 0, 0.9); /* dark overlay */
+  background-blend-mode: multiply;
   position: relative;
   overflow: hidden; /* Make sure the pseudo-element doesn't overflow */
   z-index: 1;
@@ -1376,7 +1378,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(2px); /* You can adjust the blur level */
+  filter: blur(8px); /* You can adjust the blur level */
   z-index: 0;
 }
 

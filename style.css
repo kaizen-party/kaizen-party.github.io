@@ -542,11 +542,12 @@
 .AboutMe-Header {
   font-size: 18px;
   font-style: normal;
-  font-family: "Ghibli-Bold";
+  font-family: "Ghibli";
   font-weight: 600;
   line-height: 1.55;
   text-transform: none;
   text-decoration: none;
+  text-align: left;
 }
  
 .AboutMe-Role {
@@ -556,11 +557,12 @@
   line-height: 1.55;
   text-transform: none;
   text-decoration: none;
+  text-align: left;
 }
  
 .AboutMe-Text {
   font-size: 12px;
-  font-family: Fira Mono;
+  font-family: "Fira Mono";
   font-weight: 400;
   line-height: 1.55;
   text-transform: none;
