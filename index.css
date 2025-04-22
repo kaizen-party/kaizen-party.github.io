@@ -3009,6 +3009,10 @@
   align-items: center;
   flex-direction: row;
 }
+
+.copyright-text {
+  font-size: 12px;
+}
  
 .home-icon52 {
   width: 24px;
